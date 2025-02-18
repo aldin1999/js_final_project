@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+        <form id="searchForm" onsubmit="return handleSearch(event)" class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search beaches, temples..." />
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to Travel Explorer</h1>
+        <p>Explore beautiful beaches, temples, and destinations around the world. Get recommendations and discover new places to visit.</p>
+    </section>
+
+    <section id="searchResults">
+        <h2>Search Results</h2>
+        <div id="resultsContainer"></div>
+        <div id="thankYouMessage"></div> <!-- Message will show here -->
+    </section>
+    
+</body>
+</html>

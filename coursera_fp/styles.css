@@ -1,0 +1,232 @@
+/* Resetting default margins and paddings for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin-top: 60px; /* To prevent content from going under the navbar */
+}
+
+/* Navbar Styling */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  align-items: center;
+  z-index: 100;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-right: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #575757;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #ff5f57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #e14e47;
+}
+
+/* Centering Welcome Text */
+#home {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Styling Search Results Section */
+#searchResults {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#resultsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.result {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 300px;
+}
+
+.result img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.result h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+/* Style for the results container */
+#resultsContainer {
+  margin-top: 20px;
+}
+
+/* Style for each individual result */
+.result {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.result img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.bookNowButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.bookNowButton:hover {
+  background-color: #45a049;
+}
+
+/* Style for the Thank You message */
+#thankYouMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #4CAF50;
+  text-align: center;
+}
+
+#thankYouMessage {
+  display: none;
+}
+
+/* When shown, make the Thank You message visible */
+#thankYouMessage p {
+  display: block;
+  font-size: 18px;
+  color: #4CAF50;
+  text-align: center;
+}
+
+/* About Us Page Styles */
+#about {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#about h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Contact Us Page Styles */
+#contact {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact form div {
+  text-align: left;
+}
+
+#contact form input,
+#contact form textarea {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact form button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact form button:hover {
+  background-color: #45a049;
+}
